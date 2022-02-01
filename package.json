@@ -43,7 +43,7 @@
       "wdio-mochawesome-reporter": "^4.0.0"
     },
     "scripts": {
-      "test": "cross-env HOST=https://app.qa.tradeswell.com/ USER=${user:-eshvab@tradeswell.com} ./node_modules/.bin/wdio",
+      "test": "cross-env HOST=https://app.qa.tradeswell.com/ USER=${user:-eshvab+3@tradeswell.com} ./node_modules/.bin/wdio",
       "reportGenerate": "allure generate allure-results/ --clean"
     },
     "keywords": [],
