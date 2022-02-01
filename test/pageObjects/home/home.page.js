@@ -16,6 +16,16 @@ class HomePage extends Page {
     get myProfileSubMenu() { return $(`a[href*='/my-profile?']`); }
     get notificationBar() { return $(`#notistack-snackbar`); }
     get companyNameControl() { return $(`header div p`); }
+    get companySelector() { return $(`[class*=CompanyHeaderMenu__Active]`); }
+    get companySearchInput() { return $(`input[placeholder='Search...']`); }
+    get firstCompanyFromTheSearch() { return $$(`.MuiAutocomplete-groupUl li`)[0]; }
+    get topInsightsCards() { return $$(`div[style='position: relative;']`); }
+    get tableTitles() { return $$(`h3[data-testid='filterbar-title']`); }
+    get cumulativeToGoalHeader() { return $(`[class*=ChartSummaryItems__ChartSummaryRoot]`); }
+    get cumulativeRangeDropdown() { return $$(`.GlobalCumulativePerformance__ChartWrapper-sc-7856zd-0 [data-testid='dropdown-clickable']`)[2]; }
+    get dailyOption() { return $(`li*=Daily`); }
+    get weeklyOption() { return $(`li*=Weekly`); }
+    get monthylOption() { return $(`li*=Monthly`); }
  
 
     open() {

@@ -21,10 +21,10 @@ describe("Tradeswell Settings: Team page", () => {
   
   
     before(function () {
-    LoginPage.open();
-    LoginPage.login(userName, pass);
-    HomePage.greetingText.waitForDisplayed({ timeout: 30000 });
-  });
+        LoginPage.open();
+        LoginPage.login(userName, pass);
+        HomePage.greetingText.waitForDisplayed({ timeout: 30000 });
+    });
 
   beforeEach(function () {
     SettingsTeamPage.open();
